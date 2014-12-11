@@ -19,4 +19,10 @@ describe("Potencias.elevar", function() {
 
 	});
 
+	it("devuelve el inverso del número elevado al exponente positivo cuando el segundo parámetro sea negativo", function() {
+
+		expect( Potencias.elevar(3, -2) ).toBe( 1 / Potencias.elevar(3, 2) );
+
+	});
+
 });
